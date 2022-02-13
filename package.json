@@ -1,0 +1,37 @@
+{
+  "name": "imperial-compiler",
+  "version": "0.0.1",
+  "description": "TypeScript compiler to compile to bytecode and obfuscate",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node .",
+    "watch": "npx tsc --watch",
+	"test:compiled": "npx bytenode ./dist/index.jsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imperial-mod/imperial-compiler.git"
+  },
+  "keywords": [
+    "compiler",
+    "typescript",
+    "bytecode",
+    "bytenode",
+    "obfuscate"
+  ],
+  "author": "zani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imperial-mod/imperial-compiler/issues"
+  },
+  "homepage": "https://github.com/imperial-mod/imperial-compiler#readme",
+  "dependencies": {
+    "bytenode": "^1.3.4",
+    "chokidar": "^3.5.3",
+    "glob": "^7.2.0",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0"
+  }
+}
